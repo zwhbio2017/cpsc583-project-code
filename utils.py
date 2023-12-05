@@ -16,8 +16,8 @@ import math
 import numpy as np
 from utils_io import random_tring
 
-NP_model = pickle.load(gzip.open('data/NP_score.pkl.gz'))
-SA_model = {i[j]: float(i[0]) for i in pickle.load(gzip.open('data/SA_score.pkl.gz')) for j in range(1, len(i))}
+NP_model = pickle.load(gzip.open('NP_score.pkl.gz'))
+SA_model = {i[j]: float(i[0]) for i in pickle.load(gzip.open('SA_score.pkl.gz')) for j in range(1, len(i))}
 
 
 class MolecularMetrics(object):
